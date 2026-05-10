@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo_da_pagina.css"> <!--linka o arquivo css a pagina-->
+    <script src="interatividade_da_pagina.js"></script> <!--linka o arquivo de javascript a pagina-->
+    <title>Julia Scatambullo Mayeski Nogueira</title>
+</head>
+<body>
+<!-- menu de navegação que leva a diferentes pontos da pagina através de ancoras -->
+<div id="menuzin">
+<!-- botões que levam a sessões especificas da pagina -->
+<button><a href="#ésobre" >Sobre Mim</a></button>
+
+<button><a href="#formacao" >Formação</a></button>
+
+<button><a href="#portifolio" >Portifólio</a></button>
+
+<button><a href="#contato" >Contate-me</a></button>
+
+<!-- modão que alterna entre o modo claro e escuro -->
+<button id="mudamuda" onclick="mudar()">Modo noturno/diurno</button>
+</div>
+
+<!-- sessão com conteudo"sobre mim" -->
+<div id="ésobre">
+<!--informações sobre mim -->
+<h4>Sobre mim</h4>
+<p>
+    Olá, meu nome é Julia Scatambullo Mayeski Nogueira, eu sou uma estudante universitária atualmente cursando 
+    Ciências da Computação.
+</p>
+
+<p>Atualmente tenho feito alguns pequenos trabalhos de tradução e leitura beta de textos e histórias, revisões 
+   para corrigir erros de gramática e continuidade.
+</p>
+
+<p>
+Alguns dos meus hobbies são: Culinária, Jardinagem e fazer Origamis. 
+</p>
+
+</div>
+
+<!-- sessão com conteudo"formação" -->
+<div id="formacao">
+<h4>Formação</h4>
+<p>uma pequena lista de cursos feitos por mim e dos idiomas que eu falo</p>
+
+<p>
+    Cursos: Inglês Básico, Webdesign, Hardware.
+</p>
+
+<p>
+Idiomas: Português Brasileiro, Inglês avançado.
+</p>
+
+<p>
+Minha formação educacional mais recente foi no curso técnico de Desenvolvimento de Sistemas 
+integrado ao ensino médio.
+</p>
+
+</div>
+
+<!-- sessão com conteudo"portifolio" -->
+<div id="portifolio">
+<h3>Portifólio</h3>
+<p>Alguns outros sites feitos por mim:</p>
+
+<!-- links github de outros tabalhos meus -->
+<h4>Trabalho extencionista feito para a faculdade</h4>
+
+<p>https://github.com/JuliaScatambullo/Trabalhos-Uninter.git</p>
+
+<br>
+
+<h4>
+    Trabalho de Desenvolvimento Web feito para o Curso Técnico de Desenvolvimento de Sistemas
+</h4>
+
+<p>
+    https://github.com/JuliaScatambullo/2e-ga-pam1-2021.git
+</p>
+
+</div> 
+
+<!-- sessão com conteudo"contato" -->
+<div id="contato">
+<h4>Entre em contato comigo!</h4>
+<p>Me envie uma pergunta, ou qualquer mensagem que tiver vontade !</p>
+
+<!-- formulario com campos onde o usuário pode colocar as informações de contato -->
+<form>
+
+    <!-- campo para inserir nome -->
+<label for="fname">Seu nome:</label><br>
+<input type="text" id="nome"> <br>
+
+<!-- campo para inserir o email -->
+<label for="fname">Seu email:</label><br>
+<input type="text" id="email" > <br>
+
+<!-- campo para inserir a mensagem -->
+<label for="fname">Sua mensagem:</label><br>
+<input type="text" id="mensagem"> <br> <br>
+
+</form>
+<button type="submit" id="enviar" onclick="validar()">Enviar Mensagem</button>
+
+<br>
+<button style="float: right;"><a href="#menuzin" >↑ voltar ao topo</a></button>
+</div>
+
+</body>
+</html>
